@@ -1,0 +1,22 @@
+{
+  "name": "peach.cool",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "peach.cool api client library.",
+  "scripts": {
+    "build": "babel src -f $npm_package_main -s inline -d dist",
+    "test": "exit 1",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/developit/peach.cool.git"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "jan": "^1.0.3",
+    "wildemitter": "^1.2.0"
+  }
+}
