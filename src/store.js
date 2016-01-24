@@ -7,6 +7,10 @@ export default class Store extends Emitter {
 		this.on('change', fn);
 	}
 
+	unsubscribe(fn) {
+		this.off('change', fn);
+	}
+
 	getState() {
 		return this.data;
 	}
