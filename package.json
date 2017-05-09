@@ -13,7 +13,7 @@
     "url": "git://github.com/developit/peach.cool.git"
   },
   "devDependencies": {
-    "babel": "^5.8.23"
+    "babel": "^6.23.0"
   },
   "dependencies": {
     "jan": "^1.0.3",
